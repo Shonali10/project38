@@ -40,12 +40,12 @@ function preload(){
 
 function setup(){
   // making canvas
-  createCanvas(500,500);
+  createCanvas(width,height);
   
   // making the knife
   knife = createSprite(40,200,20,20,20);
   knife.addImage(knifeImage);
-  knife.scale=0.6;
+  knife.scale=1;
 
   
   score=0;
@@ -120,7 +120,7 @@ function fruits(){
      fruit.velocityX=(7+score/4);   
     }
     
-    fruit.scale=0.2;
+    fruit.scale=1;
     r=Math.round(random(1,4));
     if (r == 1){
       fruit.addImage(fruit1);
